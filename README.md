@@ -96,6 +96,7 @@ $ git status
 
 ```
 On branch main
+nothing to commit, working tree clean
 ```
 
 - リモートのmainを取り込む（同期させるため）
@@ -113,11 +114,97 @@ $ git checkout -b 1-editReadme
 
 ### ③ コード修正（VSCode）
 
-- VSCodeでREADME.mdを開く
+- 今のブランチを確認する<br>
+
+```
+$ git status
+On branch 1-editReadme
+nothing to commit, working tree clean
+```
+
+- VSCodeで`README.md`を開く
 
 ```
 $ ls
 README.md
 $ code .
 ```
-- 適当にREADME.mdを修正
+- 適当に`README.md`を修正
+
+- 今の状況を確認するのにも`status`は使える（こちらが主な使い道）<br>
+
+```
+$ git status
+On branch 1-editReadme
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+
+`README.md`が編集されたことが示されている.
+
+- addして変更を保存
+
+```
+$ git add README.md
+```
+
+上記ではファイルを指定してaddしているが, 全ての変更を保存するワイルドカードも以下のように使用できる.
+
+```
+$ git add .
+```
+
+- 今の状況を確認する
+
+```
+$ git status
+On branch 1-editReadme
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+```
+
+`Changes to be committed`はcommitできるよって意味？（笑）
+
+- commitする<br>commitには` -m`でメッセージがつけれる. イシュー番号をつけておくと後からどのイシューでの変更なのかが分かりやすい.
+
+```
+$ git commit -m "#1 edit raadme"
+```
+
+- 今の状況を確認する
+
+```
+$ git status
+On branch 1-editReadme
+nothing to commit, working tree clean
+```
+
+commitしてローカルリポジトリに保存済みのため, 変更なしと表示される.（リモートにpushする準備ができた）
+
+- pushする
+
+```
+$ git push origin HEAD
+```
+
+HEADは最新にcommitしたブランチを指す（今回の例だと`1-editReadme`のこと）
+
+### ④ pull Requestを作成（Github）
+
+<a href="https://gyazo.com/065228bb341b41d766e2396177106c84"><img src="https://i.gyazo.com/065228bb341b41d766e2396177106c84.png" alt="Image from Gyazo" width="700"/></a><br>
+
+<a href="https://gyazo.com/a9eacd38603de0ad4929d33f944c33c5"><img src="https://i.gyazo.com/a9eacd38603de0ad4929d33f944c33c5.png" alt="Image from Gyazo" width="700"/></a><br>
+
+タイトルと説明を記入してCreateボタンを押下
+
+<a href="https://gyazo.com/cfd92e717693597ba0846d17b521d160"><img src="https://i.gyazo.com/cfd92e717693597ba0846d17b521d160.png" alt="Image from Gyazo" width="700"/></a><br>
+
+- 以下のような状態になったら完了！！おつかれさま :sparkles:<br>
+Mergeボタンを押してmergeしたら, リモートに変更が反映される（業務ではコードを管理している人が確認して問題ないと判断されればmergeされるため, この項目はmerge Requestとも呼ばれる）.
+
+<a href="https://gyazo.com/e71568b8272e1e8ffe5c03fb746e4021"><img src="https://i.gyazo.com/e71568b8272e1e8ffe5c03fb746e4021.png" alt="Image from Gyazo" width="700"/></a>
