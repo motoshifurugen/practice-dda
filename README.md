@@ -170,5 +170,16 @@ Changes to be committed:
 
 `Changes to be committed`はcommitできるよって意味？（笑）
 
+- commitする<br>commitには` -m`でメッセージがつけれる. イシュー番号をつけておくと後からどのイシューでの変更なのかが分かりやすい.
+
+```
+$ git commit -m "#1 edit raadme"
+```
+
+- 今の状況を確認する
+
+
+
+- pushしてリモートに
 
 
