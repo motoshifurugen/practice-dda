@@ -11,7 +11,7 @@ macOS Monterey(バージョン 12.5)
 - Flask 2.2.2
 - Werkzeug 2.2.2
 
-## flaskAPI作成〜Git管理まで
+# 【1】flaskAPI作成〜Git管理まで
 
 ## 参考記事
 
@@ -48,10 +48,16 @@ flask-api
          └── user.py
 ```
 
+### ■ デコレータについて
+
+[【Python】”@(アットマーク)”から始まる行はどういう意味？【デコレータ】](https://keymaso.com/programemory/python/decorator/)
+
 ### ■ .gitignore
+
 gitで管理しなくていいファイルなどを指定できる.
 
 ### ■ リモートにpush
+
 ```
 git init
 git add .
