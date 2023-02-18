@@ -178,8 +178,33 @@ $ git commit -m "#1 edit raadme"
 
 - 今の状況を確認する
 
+```
+$ git status
+On branch 1-editReadme
+nothing to commit, working tree clean
+```
 
+commitしてローカルリポジトリに保存済みのため, 変更なしと表示される.（リモートにpushする準備ができた）
 
-- pushしてリモートに
+- pushする
 
+```
+$ git push origin HEAD
+```
 
+HEADは最新にcommitしたブランチを指す（今回の例だと`1-editReadme`のこと）
+
+### ④ pull Requestを作成（Github）
+
+<a href="https://gyazo.com/065228bb341b41d766e2396177106c84"><img src="https://i.gyazo.com/065228bb341b41d766e2396177106c84.png" alt="Image from Gyazo" width="700"/></a><br>
+
+<a href="https://gyazo.com/a9eacd38603de0ad4929d33f944c33c5"><img src="https://i.gyazo.com/a9eacd38603de0ad4929d33f944c33c5.png" alt="Image from Gyazo" width="700"/></a><br>
+
+タイトルと説明を記入してCreateボタンを押下
+
+<a href="https://gyazo.com/cfd92e717693597ba0846d17b521d160"><img src="https://i.gyazo.com/cfd92e717693597ba0846d17b521d160.png" alt="Image from Gyazo" width="700"/></a><br>
+
+- 以下のような状態になったら完了！！おつかれさま :sparkles:<br>
+Mergeボタンを押してmergeしたら, リモートに変更が反映される（業務ではコードを管理している人が確認して問題ないと判断されればmergeされるため, この項目はmerge Requestとも呼ばれる）.
+
+<a href="https://gyazo.com/e71568b8272e1e8ffe5c03fb746e4021"><img src="https://i.gyazo.com/e71568b8272e1e8ffe5c03fb746e4021.png" alt="Image from Gyazo" width="700"/></a>
