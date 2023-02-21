@@ -1,1 +1,1 @@
-# chapter2 Vueフロント作成 〜 DB作成
+# 【chapter2】 Vueフロント作成 〜 DB作成

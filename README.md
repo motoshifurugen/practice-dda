@@ -13,5 +13,5 @@ macOS Monterey(バージョン 12.5)
 
 ## 各回の内容
 
-- [chapter1 FlaskAPI作成 〜 Git管理](https://github.com/motoshifurugen/practice-dda/tree/main/chanpter1)
-- [chapter2 Vueフロント作成 〜 DB作成](https://github.com/motoshifurugen/practice-dda/tree/main/chanpter2)
+- [【chapter1】 FlaskAPI作成 〜 Git管理](https://github.com/motoshifurugen/practice-dda/tree/main/chanpter1)
+- [【chapter2】 Vueフロント作成 〜 DB作成](https://github.com/motoshifurugen/practice-dda/tree/main/chanpter2)
