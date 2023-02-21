@@ -1,4 +1,4 @@
-# chapter1 FlaskAPI作成 〜 Git管理
+# 【chapter1】 FlaskAPI作成 〜 Git管理
 
 ## 参考記事
 
