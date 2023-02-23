@@ -4,7 +4,9 @@
 
 [はじめてのVuetify(ログインページ作成で使い方学ぶ)](https://reffect.co.jp/vue/vuetify-first-time)
 
-http://localhost:8080/ で以下のように表示されたら完了
+http://localhost:8080/ で以下のように表示されたら完了！
+
+<a href="https://gyazo.com/764bade13ba9b9c60cc8bbdf04c7da96"><img src="https://i.gyazo.com/764bade13ba9b9c60cc8bbdf04c7da96.jpg" alt="Image from Gyazo" width="500"/></a>
 
 ## アプリ作成準備
 
