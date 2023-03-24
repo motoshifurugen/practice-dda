@@ -13,5 +13,6 @@ macOS Monterey(バージョン 12.5)
 
 ## 各回の内容
 
-- [【chapter1】 FlaskAPI作成 〜 Git管理](https://github.com/motoshifurugen/practice-dda/tree/main/chanpter1)
-- [【chapter2】 Vueフロント作成 〜 Git管理](https://github.com/motoshifurugen/practice-dda/tree/main/chanpter2)
+- [【chapter1】 FlaskAPI作成 〜 Git管理](https://github.com/motoshifurugen/practice-dda/tree/main/chapter1)
+- [【chapter2】 Vueフロント作成 〜 Git管理](https://github.com/motoshifurugen/practice-dda/tree/main/chapter2)
+- [【chapter3】 Vuetifyの構造・動き方 ~ Flaskの構造・動き方](https://github.com/motoshifurugen/practice-dda/tree/main/chapter3)
