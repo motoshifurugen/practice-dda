@@ -28,13 +28,13 @@ dda-front
 
 ## Vueの動き方
 
-- ① main.js
+- ① main.js を呼んでJavaScriptを起動
 
     ↓
-- ② App.vue
+- ② App.vue を呼んでVueを起動
 
     ↓
-- ③ componentたち
+- ③ componentたち が描写される
 
 ### 例）デフォルト画面
 
@@ -44,4 +44,45 @@ dda-front
 
 ## Flaskの構造
 
+ファイル構成は以下のようにする。
+
+```
+dda-api
+├── app.py（起動ファイル）
+├── config.py（設定ファイル）
+└── api
+    ├── __init__.py（土台）
+    ├── database.py（DB情報）
+    ├── models
+    │    └── （モデル群）
+    └── controllers
+         └── （コントローラー群）
+```
+
+- モデルでデータの定義を行う
+- コントローラーでメソッドの定義を行う
+  - あるURLにアクセスしたら、所定のデータを返すというメソッドを定義することで、APIとなる（具体的には以下のようなJSON形式でデータを渡す）
+
+
+## Flaskの動き方（API）
+
+- ① app.py を実行してFlaskを起動する
+
+    ↓
+- ② URLにアクセスすると、URLごとに定義しておいたメソッドが実行される
+
+    ↓
+- ③ メソッドでモデルと操作してデータを返す
+
+例）https://dda/api/getUser/1
+```
+{
+  "user": [
+   {
+     "id": 1,
+     "name": "John"
+   }
+  ]
+}
+```
 
