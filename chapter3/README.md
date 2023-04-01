@@ -44,6 +44,8 @@ dda-front
 
 ## Flaskの構造
 
+参考：https://swallow-incubate.com/archives/blog/20190819
+
 ファイル構成は以下のようにする。
 
 ```
