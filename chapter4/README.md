@@ -2,6 +2,25 @@
 
 ## MySQLのインストール
 
+```bash
+$ mysql --version
+```
+
+入ってなかったらインストール
+```bash
+$ brew install mysql
+```
+
+起動
+```
+$ mysql.server start
+```
+
+ログイン
+```bash
+$ mysql -uroot
+```
+
 ## FlaskSQLAlchemy
 
 【公式ドキュメント】https://flask-sqlalchemy.palletsprojects.com/en/3.0.x/
